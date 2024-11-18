@@ -1,0 +1,23 @@
+#hero{
+    background: linear-gradient(to top, #0008, transparent ), url("/assets/images/about-us-hero.jpg");
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #fff;
+    line-height: normal;
+}
+p{
+    color: #000;
+}
+#mission{
+    .row .col-lg-6:not(.center){
+        order: -1;
+    }
+}

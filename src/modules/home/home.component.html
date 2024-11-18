@@ -1,0 +1,89 @@
+<section class="hero" id="hero">
+    <div class="w-75">
+        <h1>Leading <span>Marine Hydraulic</span> Solutions for <br /> Maritime Industry</h1>
+        <button class="btn-0 ms-2 mt-2">Get a Quote <i class="bi bi-arrow-right"></i></button>
+    </div>
+</section>
+
+
+<section id="leading-marine">
+    <div class="row g-0">
+        <div class="col-12 d-sm-none d-block px-2">
+            <p class="title opacity-75">Leading Marine Maritime Industry</p>
+        </div>
+        <div class="col-lg-6 center">
+            <img src="assets/images/section-0.svg" alt="JEYA ENGINEERS" class="w-60 my-5">
+        </div>
+        <div class="col-lg-6 center">
+            <div class="container ">
+                <p class="title opacity-75 d-sm-block d-none">Leading Marine Maritime Industry</p>
+
+                <p class="mt-5">
+                    Moreover, the term might appear in literature, art, or historical references, such as in
+                    "Marienbad," a
+                    city in the Czech Republic, known for its cultural and architectural heritage.
+                    The word "Marien" could also evoke associations with traditional European festivals or celebrations,
+                    particularly those linked to the Virgin Mary.
+                    Thus, its meaning can vary widely depending on the context.
+                </p>
+                <p class="mt-2">
+                    The word "Marien" could also evoke associations with traditional European festivals or celebrations,
+                    particularly those linked to the Virgin Mary.
+                    Thus, its meaning can vary widely depending on the context.
+                </p>
+                <button class="btn-0 primary-bg text-white my-5">
+                    Learn more <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="bg-gray" id="solutions">
+    <p class="heading primary-text fw-bold mt-lg-5 text-center">Discover Our Professional Services</p>
+    <div class="container mt-5">
+        <div class="row mt-4">
+            @for (item of serviceArr; track $index) {
+            <div class="center col-lg-4 col-sm-12 mb-4">
+                <div class="card-0 service">
+                    <p class="fw-semibold m-0">{{ item.title }}</p>
+                    <small>{{ item.subject }}</small>
+                </div>
+            </div>
+            }
+        </div>
+        <div class="w-100 text-end">
+            <button class="btn-0 primary-bg text-white mb-4 me-lg-4 me-3">
+                Find out more
+                <i class="bi bi-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<section class="" id="blogs">
+    <p class="heading primary-text fw-bold text-center">Latest Insights</p>
+    <div class="container mt-5">
+        <div class="row mt-4">
+            @for (item of serviceArr; track $index) {
+            <div class="center col-lg-4 col-sm-12 mb-4">
+                <div class="card-0 service">
+                    <p class="fw-semibold m-0">{{ item.title }}</p>
+                    <small>{{ item.subject }}</small>
+                </div>
+            </div>
+            }
+        </div>
+        <div class="row text-end">
+            <div class="col-8"></div>
+            <div class="col-lg-4 mb-4">
+                <button class="btn-0 primary-bg text-white me-lg-4 me-3">
+                    Learn more
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

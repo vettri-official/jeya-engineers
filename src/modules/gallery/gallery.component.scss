@@ -1,0 +1,42 @@
+#hero{
+    background: linear-gradient(to right, #000000be, transparent ), url("/assets/images/gallery.jpg");
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #fff;
+    line-height: normal;
+}
+img{
+    transition: 10s;
+}
+button.active{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.card{
+    aspect-ratio: 1/1;
+    box-shadow: 2px 4px 12px #00000014;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+    border-color: transparent;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.02);
+    }
+}
+#gallery{
+    padding-bottom: var(--nav-height);
+}
+.tab-items{
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: .5rem;
+    flex-wrap: wrap;
+}
+

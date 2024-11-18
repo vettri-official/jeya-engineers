@@ -1,0 +1,36 @@
+<div class="container-fluid nav-bar">
+    <div class="row g-0 m-0">
+        <div class="col-md-2 col-4">
+            <div class="d-none d-sm-block logo">
+                <p class="logo">
+                    Logo
+                </p>
+            </div>
+            <div class="d-block d-sm-none h-100 pt-3">
+                <button class="btn border-0" (click)="openMenu()">
+                    <i class="bi bi-list-nested fs-2"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col-md-7 d-none d-md-block">
+            <ul class="nav-link">
+                @for (menu of menuArr; track $index) {
+                <li [routerLink]="menu.value" routerLinkActive="active">{{ menu.label }}</li>
+                }
+            </ul>
+        </div>
+        <div class="col-md-3 col-8 text-end pt-3">
+            <button class="btn-0 btn-1" routerLink="/contact-us">Contact Us</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="mobile-navbar d-block d-md-none">
+    <button class="btn-close m-4" (click)="closeMenu()"></button>
+    <ul>
+        @for (menu of menuArr; track $index) {
+        <li> <a [routerLink]="menu.value" routerLinkActive="active"> {{ menu.label }} </a></li>
+        }
+    </ul>
+</div>

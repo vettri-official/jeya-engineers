@@ -1,0 +1,43 @@
+#hero{
+    background: linear-gradient(to right, #000000be, transparent ), url("/assets/images/blogs/hero.jpg");
+    background-size: cover; 
+    background-position: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #fff;
+    line-height: normal;
+}
+
+.content-container{
+    max-height: 100%;
+    background-color: #fff;
+}
+.content{
+    display: -webkit-box;
+    text-align: justify;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 12; 
+    overflow: hidden;
+}
+.post-img{
+    aspect-ratio: 1/1;
+    background: url("/assets/images/blogs/post.jpg");
+    background-position: right;
+    background-size: cover;
+    border-color: transparent;
+
+}
+.post{
+    transition: all .3s cubic-bezier(0,0,.5,1);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.heading{
+    font-size: 2rem;
+}

@@ -1,0 +1,43 @@
+<section id="hero">
+    <div class="w-75">
+        <h1>Blog</h1>
+    </div>
+</section>
+
+<section id="blogs" class="container-fluid mb-3">
+    <div class="row g-4">
+        <div class="col-12">
+            <p class="heading primary-text fw-bold text-center">Latest Insights</p>
+        </div>
+        @for (item of [0,1,2,0,0,0]; track $index) {
+        <div class="col-lg-4 ">
+            <div class="row g-0 bg-gray post">
+                <div class="col-12  p-2 fw-semibold text-center">
+                    Title
+                </div>
+                <div class="col-8">
+                    <div class="post-img">
+                    </div>
+                </div>
+                <div class="col-4 content-container">
+                    <p class="content px-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quas accusamus ipsum? Animi cumque
+                        doloremque dignissimos molestiae nam perspiciatis sunt, et dolores sequi commodi error incidunt
+                        distinctio sint necessitatibus laudantium laboriosam fugiat in alias itaque modi praesentium,
+                        voluptatum esse dolorem!
+                    </p>
+                </div>
+                <div class="col-6 p-2 text-secondary">
+                    11 June 2002
+                </div>
+                <div class="col-6 p-2 text-end">
+                    Marketing
+                </div>
+            </div>
+        </div>
+        }
+        <div class="col-12 text-end">
+            <button class="btn btn-link primary-text text-decoration-none">See more...</button>
+        </div>
+    </div>
+</section>
