@@ -1,0 +1,1 @@
+function c(o){let e=document.querySelector("#hero");document.addEventListener("scroll",()=>{let t=e?.getBoundingClientRect().y,l=document.querySelector(".nav-bar");t&&t+(e?.scrollHeight||0)<=10?l.classList.add("active"):l.classList.remove("active")})}export{c as a};
