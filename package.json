@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --base-href \"https://vettri-official.github.io/jeya-engineers/\"",
+    "deploy": "npx angular-cli-ghpages --dir=dist/jeya/browser",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

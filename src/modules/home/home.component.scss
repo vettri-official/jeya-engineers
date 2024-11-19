@@ -1,5 +1,5 @@
 .hero{
-    background: linear-gradient(to top,#0005, #0005), url("/assets/images/home-hero.png");
+    background: linear-gradient(to top,#0005, #0005), url("../../assets/images/home/hero.png");
     background-size: cover; 
     background-position: center;
     display: flex;
@@ -42,7 +42,7 @@ p{
     font-size: 2rem;
 }
 .service{
-    background: linear-gradient(to top, #000900 1%, transparent 50%), url("/assets/images/service.jpg");
+    background: linear-gradient(to top, #000900 1%, transparent 50%), url("../../assets/images/home/service.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
