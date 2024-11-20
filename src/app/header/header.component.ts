@@ -27,8 +27,8 @@ export class HeaderComponent {
       value: '/gallery',
     },
     {
-      label: 'Blog',
-      value: '/blog',
+      label: 'Blogs',
+      value: '/blogs',
     },
   ];
 

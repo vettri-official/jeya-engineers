@@ -1,5 +1,5 @@
 .hero{
-    background: linear-gradient(to top,#0005, #0005), url("../../assets/images/home/hero.png");
+    background: linear-gradient(to top,#0005, #0005), url("src/assets/images/home/hero.png");
     background-size: cover; 
     background-position: center;
     display: flex;
@@ -42,14 +42,78 @@ p{
     font-size: 2rem;
 }
 .service{
-    background: linear-gradient(to top, #000900 1%, transparent 50%), url("../../assets/images/home/service.jpg");
+    background: linear-gradient(to top, #000900 1%, transparent 50%), url("src/assets/images/home/service.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     display: flex;
     justify-content: end;
     color: #fff;
+    p{
+        line-height: 1.5rem;
+    }
 }
 .w-60{
     width: 60%;
+}
+@media (width < 760px) {
+    .w-60{
+        width: 80%;
+    }
+}
+.text-justify{
+    text-align: justify;
+}
+::-webkit-scrollbar {
+    height: 0px; 
+}
+.scroll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 3rem;
+    aspect-ratio: 1/1;
+    z-index: 99;
+    background: var(--primary-color);
+    outline: none;
+    border-color: transparent;
+    color: #fff;
+    border-radius: 50%;
+    // box-shadow: 0 0 0 .5rem #fff5;
+    animation: scale 1s infinite ease-in-out;
+    @keyframes scale {
+        from{
+            box-shadow: 0 0 0 0rem var(--primary-5);
+        }
+        to{
+            box-shadow: 0 0 0 .5rem var(--primary-5);
+        }
+    }
+    i{
+        font-size: 1.5rem;
+    }
+    
+}
+.frame{
+    .scroll-right{
+        @extend .scroll;
+        right: 5%;
+    }
+    .scroll-left{
+        @extend .scroll;
+        left: 5%;
+    }
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5%;
+
+    .card-frame:first-child{
+        margin-left: 5%;
+    }
+    .card-frame:last-child{
+        margin-right: 5%;
+    }
 }

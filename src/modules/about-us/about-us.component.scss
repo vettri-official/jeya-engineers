@@ -1,5 +1,5 @@
 #hero{
-    background: linear-gradient(to top, #0008, transparent ), url("../../assets/images/about-us/hero.jpg");
+    background: linear-gradient(to top, #0008, transparent ), url("src/assets/images/about-us/hero.jpg");
     background-size: cover; 
     background-position: center;
     display: flex;
@@ -15,6 +15,9 @@ h1{
 }
 p{
     color: #000;
+}
+.heading{
+    font-size: 2rem;
 }
 @media (width < 760px) {
     #mission{

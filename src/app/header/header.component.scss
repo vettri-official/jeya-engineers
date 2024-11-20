@@ -11,10 +11,9 @@
         --nav-text : var(--primary-color);
     }
     .logo{
-        margin: 0;
         margin-top: .5rem;
-        font-size: 2rem;
         color: var(--nav-text);
+        cursor: pointer;
     }
     button{
         i {

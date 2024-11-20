@@ -26,12 +26,15 @@
 } 
 :root{
     --primary-color : #044362;
+    --primary-5 : #0443627e;
     --nav-height : 65px;
 }
 * {
     font-family: 'poppins';
     letter-spacing: .1rem;
     font-size: 13px;
+    scroll-behavior: smooth;
+    
 }
 body{
     margin: 0;

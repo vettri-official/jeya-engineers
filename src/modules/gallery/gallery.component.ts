@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import swictchColor from '../../utilities/functions/navbar-color';
+import swictchColor from 'src/utilities/functions/navbar-color';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({

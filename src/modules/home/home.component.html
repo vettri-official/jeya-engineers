@@ -8,7 +8,7 @@
 
 <section id="leading-marine">
     <div class="row g-0">
-        <div class="col-12 d-sm-none d-block px-2">
+        <div class="col-12 d-sm-none d-block px-3">
             <p class="title opacity-75">Leading Marine Maritime Industry</p>
         </div>
         <div class="col-lg-6 center">
@@ -18,7 +18,7 @@
             <div class="container ">
                 <p class="title opacity-75 d-sm-block d-none">Leading Marine Maritime Industry</p>
 
-                <p class="mt-5">
+                <p class="mt-5 px-3 px-md-0">
                     Moreover, the term might appear in literature, art, or historical references, such as in
                     "Marienbad," a
                     city in the Czech Republic, known for its cultural and architectural heritage.
@@ -26,14 +26,16 @@
                     particularly those linked to the Virgin Mary.
                     Thus, its meaning can vary widely depending on the context.
                 </p>
-                <p class="mt-2">
+                <p class="mt-2 px-3 px-md-0">
                     The word "Marien" could also evoke associations with traditional European festivals or celebrations,
                     particularly those linked to the Virgin Mary.
                     Thus, its meaning can vary widely depending on the context.
                 </p>
-                <button class="btn-0 primary-bg text-white my-5">
-                    Learn more <i class="bi bi-arrow-right"></i>
-                </button>
+                <div class="px-3 px-md-0">
+                    <button class="btn-0 primary-bg text-white my-5 ">
+                        Learn more <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -41,20 +43,26 @@
 
 
 <section class="bg-gray" id="solutions">
-    <p class="heading primary-text fw-bold mt-lg-5 text-center">Discover Our Professional Services</p>
-    <div class="container mt-5">
-        <div class="row mt-4">
+    <p class="heading primary-text fw-bold mt-lg-5 text-center px-3">Discover Our Professional Services</p>
+    <div class="container mt-5 ">
+        <div class="frame mt-4" id="solution-frame">
+            <button class="scroll scroll-right" (click)="scrollRight('solution-frame')">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+            <button class="scroll scroll-left" (click)="scrollLeft('solution-frame')">
+                <i class="bi bi-chevron-left"></i>
+            </button>
             @for (item of serviceArr; track $index) {
-            <div class="center col-lg-4 col-sm-12 mb-4">
+            <div class="center card-frame mb-4">
                 <div class="card-0 service">
-                    <p class="fw-semibold m-0">{{ item.title }}</p>
+                    <p class="fw-semibold m-0 ">{{ item.title }}</p>
                     <small>{{ item.subject }}</small>
                 </div>
             </div>
             }
         </div>
         <div class="w-100 text-end">
-            <button class="btn-0 primary-bg text-white mb-4 me-lg-4 me-3">
+            <button class="btn-0 primary-bg text-white mb-4 me-lg-4 me-3 ">
                 Find out more
                 <i class="bi bi-arrow-right"></i>
             </button>
@@ -66,9 +74,15 @@
 <section class="" id="blogs">
     <p class="heading primary-text fw-bold text-center">Latest Insights</p>
     <div class="container mt-5">
-        <div class="row mt-4">
+        <div class="frame mt-4" id="blogs-frame">
+            <button class="scroll scroll-right" (click)="scrollRight('blogs-frame')">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+            <button class="scroll scroll-left" (click)="scrollLeft('blogs-frame')">
+                <i class="bi bi-chevron-left"></i>
+            </button>
             @for (item of serviceArr; track $index) {
-            <div class="center col-lg-4 col-sm-12 mb-4">
+            <div class="center card-frame mb-4">
                 <div class="card-0 service">
                     <p class="fw-semibold m-0">{{ item.title }}</p>
                     <small>{{ item.subject }}</small>

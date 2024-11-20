@@ -27,9 +27,9 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'blog',
-    loadComponent: () =>
-      import('../modules/blog/blog.component').then((x) => x.BlogComponent),
+    path: 'blogs',
+    loadChildren: () =>
+      import('../modules/blogs/blogs.module').then((x) => x.BlogsModule),
   },
   {
     path: 'contact-us',

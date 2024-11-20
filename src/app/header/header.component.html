@@ -1,10 +1,12 @@
 <div class="container-fluid nav-bar">
     <div class="row g-0 m-0">
         <div class="col-md-2 col-4">
-            <div class="d-none d-sm-block logo">
-                <p class="logo">
-                    Logo
-                </p>
+            <div class="d-none d-sm-flex gap-2 logo" routerLink="/home">
+                <img src="assets/images/general/logo.svg" alt="JEYA" class="">
+                <div class="pt-2">
+                    <p class="m-0">Jeya</p>
+                    <span>Engineers</span>
+                </div>
             </div>
             <div class="d-block d-sm-none h-100 pt-3">
                 <button class="btn border-0" (click)="openMenu()">
