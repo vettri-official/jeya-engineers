@@ -34,7 +34,7 @@
     letter-spacing: .1rem;
     font-size: 13px;
     scroll-behavior: smooth;
-    
+    outline: none;    
 }
 body{
     margin: 0;
@@ -84,6 +84,7 @@ section{
         margin-top: calc( var(--nav-height) * -1 );
     }
 }
+
 .bg-gray{
     background-color: #f5f5f7; //#F2F2F2;
 }

@@ -1,6 +1,6 @@
 <section id="hero">
     <div class="w-75">
-        <h1>Blog</h1>
+        <h1>Blogs</h1>
     </div>
 </section>
 
@@ -10,9 +10,9 @@
             <div class="col-12">
                 <p class="heading primary-text fw-bold text-center mt-2">Latest Insights</p>
             </div>
-            @for (item of [0,0,0,0,0,0]; track $index) {
+            @for (item of [1,2,3,4,5,6]; track $index) {
             <div class="col-lg-4 center">
-                <div class="card-0">
+                <div class="card-0 border border-2" [routerLink]="item+''">
                     <img src="assets/images/blogs/post.jpg" alt="blog" class="post">
                     <div class="content">
                         <p class="post-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, dolores.

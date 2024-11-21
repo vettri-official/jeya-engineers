@@ -1,38 +1,83 @@
 <div class="container-fluid nav-bar">
     <div class="row g-0 m-0">
-        <div class="col-md-2 col-4">
-            <div class="d-none d-sm-flex gap-2 logo" routerLink="/home">
-                <img src="assets/images/general/logo.svg" alt="JEYA" class="">
-                <div class="pt-2">
+        <div class="col-lg-3 col-4">
+            <div class="d-none d-lg-block logo" routerLink="/home">
+                <img src="assets/images/general/logo1.svg" alt="JEYA" class="ms-2">
+                <!-- <div class="pt-2">
                     <p class="m-0">Jeya</p>
                     <span>Engineers</span>
-                </div>
+                </div> -->
             </div>
-            <div class="d-block d-sm-none h-100 pt-3">
+            <div class="d-block d-lg-none h-100 pt-3">
+                <img src="assets/images/general/logo.svg" alt="JEYA" class="ms-2">
                 <button class="btn border-0" (click)="openMenu()">
                     <i class="bi bi-list-nested fs-2"></i>
                 </button>
             </div>
         </div>
-        <div class="col-md-7 d-none d-md-block">
+        <div class="col-lg-6 d-none d-lg-block">
             <ul class="nav-link">
                 @for (menu of menuArr; track $index) {
-                <li [routerLink]="menu.value" routerLinkActive="active">{{ menu.label }}</li>
+                @if (menu.label == "Solutions") {
+                <li class="dropdown-center">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                        Solutions
+                    </a>
+                    <ul class="dropdown-menu">
+                        @for (menu of solutionsArr; track $index) {
+                        <li class="p-0 py-1"><a class="dropdown-item" href="#">{{ menu }}</a></li>
+                        }
+                    </ul>
+                </li>
+                }@else {
+                <li [routerLink]="menu.value" routerLinkActive="active">
+                    {{ menu.label }}
+                </li>
+                }
                 }
             </ul>
         </div>
-        <div class="col-md-3 col-8 text-end pt-3">
+        <div class="col-lg-3 col-8 text-end pt-3">
             <button class="btn-0 btn-1" routerLink="/contact-us">Contact Us</button>
         </div>
     </div>
 </div>
 
 
-<div class="mobile-navbar d-block d-md-none">
+<div class="mobile-navbar d-block d-lg-none">
     <button class="btn-close m-4" (click)="closeMenu()"></button>
     <ul>
         @for (menu of menuArr; track $index) {
+        @if (menu.label == "Solutions") {
+        <!-- <li class="">
+            <a class="nav-link dropdown-toggle">
+                Solutions
+            </a>
+            <ul class="">
+                @for (menu of solutionsArr; track $index) {
+                <li class="p-0 py-1"><a>{{ menu }}</a></li>
+                }
+            </ul>
+        </li> -->
+        <li class="mb-1">
+            <a class="d-inline-flex border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#solutions-nav-items">
+                Solutions <i class="bi bi-caret-down-fill m-1"></i>
+            </a>
+            <div class="collapse" id="solutions-nav-items">
+                <ul class="btn-toggle-nav list-unstyled ms-1">
+                    @for (menu of solutionsArr; track $index) {
+                    <li>
+                        <a href="#" class="text-decoration-none ">
+                            {{ menu }}
+                        </a>
+                    </li>
+                    }
+                </ul>
+            </div>
+        </li>
+        }@else {
         <li> <a [routerLink]="menu.value" routerLinkActive="active"> {{ menu.label }} </a></li>
+        }
         }
     </ul>
 </div>

@@ -15,7 +15,7 @@ export class HeaderComponent {
       value: '/home',
     },
     {
-      label: 'About us',
+      label: 'About Us',
       value: '/about-us',
     },
     {
@@ -30,6 +30,19 @@ export class HeaderComponent {
       label: 'Blogs',
       value: '/blogs',
     },
+  ];
+
+  solutionsArr: string[] = [
+    'Winch',
+    'Escorts Cranes',
+    'Power steering',
+    'FEL (Front-End Loader)',
+    'Marine Gearbox Services',
+    'Hydraulic Systems Support',
+    'Kalmar and Reach Stackers',
+    'PPM and Top Lift Solutions',
+    'Grab Equipment Maintenance',
+    'Mechanical Repair and Maintenance',
   ];
 
   ngOnInit(): void {

@@ -22,6 +22,6 @@ export class ContactUsComponent {
     message: new FormControl(null, [Validators.required]),
   });
   ngOnInit(): void {
-    swictchColor('#contact');
+    swictchColor();
   }
 }

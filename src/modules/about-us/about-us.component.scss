@@ -19,6 +19,14 @@ p{
 .heading{
     font-size: 2rem;
 }
+.bg-vision{
+    background: url("src/assets/images/about-us/vision.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#mission{
+    margin-top: 5rem;
+}
 @media (width < 760px) {
     #mission{
         .row .col-lg-6:not(.center){

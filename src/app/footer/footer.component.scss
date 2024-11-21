@@ -1,9 +1,11 @@
 
 section{
+    margin-top: 0px;
+    padding-top: 1rem;
     ul{
         padding: 0;
         list-style: none;
-        li{
+        li,li *{
             padding: 0;
             margin-bottom: .5rem;
             font-size: 1.2rem;

@@ -13,7 +13,7 @@ export class GalleryComponent {
   constructor(private activatedRoute: ActivatedRoute) {}
   chosenIndex: number = 0;
   ngOnInit(): void {
-    swictchColor('#gallery');
+    swictchColor();
     this.activatedRoute.queryParams.subscribe((res: any) => {
       this.chosenIndex = res?.id || 0;
     });

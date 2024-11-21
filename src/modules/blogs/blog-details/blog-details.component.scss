@@ -1,0 +1,22 @@
+.width{
+    width: 100%;
+    max-width: 700px;
+}
+.blog-post{
+    width: 100%;
+    max-width: 700px;
+    // height: 500px;
+    aspect-ratio: 16/9;
+    background-color: url("../../../assets/images/blogs/post.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.heading{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+}

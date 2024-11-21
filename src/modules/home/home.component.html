@@ -74,15 +74,17 @@
 <section class="" id="blogs">
     <p class="heading primary-text fw-bold text-center">Latest Insights</p>
     <div class="container mt-5">
-        <div class="frame mt-4" id="blogs-frame">
-            <button class="scroll scroll-right" (click)="scrollRight('blogs-frame')">
+        <div class="frame mt-4">
+            <!-- id="blogs-frame" -->
+            <!-- <button class="scroll scroll-right" (click)="scrollRight('blogs-frame')">
                 <i class="bi bi-chevron-right"></i>
             </button>
             <button class="scroll scroll-left" (click)="scrollLeft('blogs-frame')">
                 <i class="bi bi-chevron-left"></i>
-            </button>
-            @for (item of serviceArr; track $index) {
-            <div class="center card-frame mb-4">
+            </button> -->
+            <!-- card-frame -->
+            @for (item of blogsArr; track $index) {
+            <div class="center  mb-4">
                 <div class="card-0 service">
                     <p class="fw-semibold m-0">{{ item.title }}</p>
                     <small>{{ item.subject }}</small>

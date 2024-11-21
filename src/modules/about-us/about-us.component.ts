@@ -10,6 +10,6 @@ import swictchColor from 'src/utilities/functions/navbar-color';
 })
 export class AboutUsComponent {
   ngOnInit(): void {
-    swictchColor('#leading-marine');
+    swictchColor();
   }
 }

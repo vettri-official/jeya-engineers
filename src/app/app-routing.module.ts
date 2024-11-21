@@ -38,6 +38,13 @@ const routes: Routes = [
         (x) => x.ContactUsComponent
       ),
   },
+  {
+    path: 'solutions',
+    loadChildren: () =>
+      import('../modules/solutions/solutions.module').then(
+        (x) => x.SolutionsModule
+      ),
+  },
 ];
 
 @NgModule({

@@ -10,8 +10,8 @@ import swictchColor from 'src/utilities/functions/navbar-color';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  ngOnInit(): void {
-    swictchColor('#leading-marine');
+  ngAfterViewInit(): void {
+    swictchColor();
     this.hideScroll('solution-frame');
     this.hideScroll('blogs-frame');
   }
@@ -67,6 +67,23 @@ export class HomeComponent {
         'Professional servicing for optimal lifting and handling performance.',
     },
   ];
+  blogsArr: any[] = [
+    {
+      title: 'Power steering',
+      subject:
+        'High-performance servicing and repairs for seamless marine operations.',
+    },
+    {
+      title: 'Winch',
+      subject:
+        'Expert maintenance and repair to ensure reliability and safety.',
+    },
+    {
+      title: 'Escorts Cranes',
+      subject:
+        'Professional servicing for optimal lifting and handling performance.',
+    },
+  ];
 
   scrollRight(element: string) {
     const container = document.getElementById(element) as HTMLDivElement;
@@ -94,7 +111,7 @@ export class HomeComponent {
     const scrollRightButton = document.querySelector(
       '#' + element + ' .scroll-right'
     ) as HTMLElement;
-    scrollLeftButton.style.display = 'none';
+    if (scrollLeftButton) scrollLeftButton.style.display = 'none';
     cardContainer?.addEventListener('scroll', function (event) {
       const scrollLeft = cardContainer.scrollLeft;
       const scrollWidth = cardContainer.scrollWidth;

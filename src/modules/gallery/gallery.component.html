@@ -41,33 +41,36 @@
 <section class="no-height">
     <div class="d-flex justify-content-center">
         <div class="w-lg-75 w-100 px-3 px-lg-0">
-            <div class="tab-items d-none d-sm-block">
-                @for (tab of tabArr; track $index) {
-                <button class="btn-0" class="{{ tabIndex == $index ? 'active' : '' }}" (click)="tabIndex = $index">{{
-                    tab
-                    }}</button>
-                }
-            </div>
-            <div class="d-block d-sm-none">
-                <label for="">Category:</label>
-                <select class="form-select">
+            <div class="container">
+                <div class="tab-items d-none d-sm-flex justify-content-evenly">
                     @for (tab of tabArr; track $index) {
-                    <option value="">{{ tab }}</option>
+                    <button class="btn-0" class="{{ tabIndex == $index ? 'active' : '' }}"
+                        (click)="tabIndex = $index">{{
+                        tab
+                        }}</button>
                     }
-                </select>
-            </div>
-            <div class="row my-4 g-4">
-                @for (img of galleryArr; track $index) {
-                <div class="col-lg-4 col-6">
-                    <div class="card" [routerLink]="['/gallery']" [queryParams]="{ id : $index }" data-bs-toggle="modal"
-                        data-bs-target="#gallery-modal" [style]="{'background': 'url('+ img.image +')',
-                    'background-position' : 'center', 'background-size' : 'cover' }">
-
-                    </div>
                 </div>
-                }
-                <div class="col-12 text-end">
-                    <button class="btn btn-link primary-text text-decoration-none">See more...</button>
+                <div class="d-block d-sm-none">
+                    <label for="">Category:</label>
+                    <select class="form-select">
+                        @for (tab of tabArr; track $index) {
+                        <option value="">{{ tab }}</option>
+                        }
+                    </select>
+                </div>
+                <div class="row my-4 g-4">
+                    @for (img of galleryArr; track $index) {
+                    <div class="col-lg-4 col-6">
+                        <div class="card" [routerLink]="['/gallery']" [queryParams]="{ id : $index }"
+                            data-bs-toggle="modal" data-bs-target="#gallery-modal" [style]="{'background': 'url('+ img.image +')',
+                        'background-position' : 'center', 'background-size' : 'cover' }">
+
+                        </div>
+                    </div>
+                    }
+                    <div class="col-12 text-end">
+                        <button class="btn btn-link primary-text text-decoration-none">See more...</button>
+                    </div>
                 </div>
             </div>
         </div>

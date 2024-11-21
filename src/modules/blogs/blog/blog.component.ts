@@ -7,6 +7,6 @@ import swictchColor from 'src/utilities/functions/navbar-color';
 })
 export class BlogComponent {
   ngOnInit(): void {
-    swictchColor('#contact');
+    swictchColor();
   }
 }
